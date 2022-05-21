@@ -1,38 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  font-size: 18px;
+  background-color: #f5f6f7;
+}
+h1 {
+  max-width: 940px;
+  font-size: 2.5em;
+  font-family: Lato, sans-serif;
+  font-weight: 700;
+  line-height: 1.1;
+  margin: 40px 0;
+}
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.freecodecamp-logo-contenedor {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.freecodecamp-logo {
+  height: 60px;
+}
+.calculadora {
+  background-color: #1b1b32;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.contenedor-calculadora {
+  width: 400px;
+  height: 480px;
+  padding: 10px;
+  background-color: #99c9ff;
+  border-radius: 20px;
+  border: 5px solid white;
+}
+.fila {
+  margin: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contador-container {
+  background-color: #1b1b32;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.contenedor-principal {
+  min-height: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+@media (max-width: 768px) {
+  .contenedor-principal {
+    width: 80%;
   }
 }
